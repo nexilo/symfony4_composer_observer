@@ -9,5 +9,5 @@ while inotifywait -q -e modify $COMPOSER_PROJECT_FILE_PATH >/dev/null; do
     cd $COMPOSER_PROJECT_PATH
     composer install --ignore-platform-reqs
     chmod -R 777 var/cache || true
-    chmod -R 777 var/logs || true
+    chmod -R 777 var/log || true
 done
